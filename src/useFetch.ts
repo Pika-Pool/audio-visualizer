@@ -102,7 +102,7 @@ const useFetch = <T>(
 		})();
 
 		return () => controller.abort();
-	}, [url, onSuccess, onFailure]);
+	}, [url, onSuccess, onFailure, onSettled]);
 
 	return [state, setUrl] as const;
 };

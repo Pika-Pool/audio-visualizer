@@ -83,7 +83,7 @@ const draw = (canvas: HTMLCanvasElement, normalizedData: number[]) => {
 		else if (height > canvas.offsetHeight / 2)
 			height = canvas.offsetHeight / 2;
 
-		drawLineSegment(ctx, x, height, width, (i + 1) % 2 == 0);
+		drawLineSegment(ctx, x, height, width, (i + 1) % 2 === 0);
 	});
 };
 
